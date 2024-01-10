@@ -10,6 +10,8 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 ion-icon {
   font-size: 45px;
 }
@@ -32,7 +34,13 @@ ion-icon {
 }
 
 .lien {
+  font-style: italic;
   text-decoration: underline;
+}
+
+.big-image {
+  width: 889px;
+  height: 500px;
 }
 
 body {
@@ -60,8 +68,8 @@ main {
 .pos-t {
   display: flex;
   justify-content: flex-end;
-  margin: 5vh 0 5vh 0;
-  flex-direction: column;
+  align-items: center;
+  height: 6vw;
 }
 
 .sun {
@@ -158,20 +166,21 @@ main {
   }
 
   to {
-    transform: rotate(360deg) translateX(20vw) rotate(0deg);
+    transform: rotate(360deg) translateX(20vw) rotate(40deg);
   }
 }
 
 /* Responsive adjustments based on viewport width */
 
+
 /*VENUS*/
 @keyframes orbit-v {
   from {
-    transform: rotate(0deg) translateX(10vw) rotate(0deg);
+    transform: rotate(0deg) translateX(14vw) rotate(0deg);
   }
 
   to {
-    transform: rotate(360deg) translateX(10vw) rotate(0deg);
+    transform: rotate(360deg) translateX(14vw) rotate(0deg);
   }
 }
 
@@ -256,6 +265,11 @@ main {
 .contenu p {
   margin: 15px 0 12px 0;
 
+}
+
+.contenu p:hover {
+  
+  color: red;
 }
 
 .contenu img {

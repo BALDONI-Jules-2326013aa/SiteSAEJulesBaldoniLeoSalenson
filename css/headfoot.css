@@ -10,9 +10,6 @@
   --black-800: #454545;
   --black-900: #1f1f1f;
   --black-950: #0f0f0f;
-
-  --blue: rgb(37, 0, 222);
-
 }
 
 body {
@@ -43,7 +40,7 @@ body {
 .menu-button:hover,
 #sun:hover,
 #moon:hover {
-  color: #f54e05;
+  color: #ffa200;
 }
 
 #togglebtn {
@@ -172,13 +169,13 @@ footer div {
 
 /*LIGHT MODE*/
 body.light {
+
   color: var(--black-950);
 }
 
 main.light {
-
-
-  background: linear-gradient(347deg, rgba(223, 176, 255, 1) 0%, rgba(188, 239, 255, 1) 100%);
+  background: rgb(245, 232, 255);
+  background: linear-gradient(90deg, rgba(245, 232, 255, 1) 14%, rgba(255, 255, 255, 1) 50%, rgba(193, 245, 255, 1) 100%);
 }
 
 .lien.light {
@@ -240,4 +237,3 @@ footer.light {
   }
 
 }
-

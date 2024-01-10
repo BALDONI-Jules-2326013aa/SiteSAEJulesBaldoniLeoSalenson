@@ -16,7 +16,7 @@ ion-icon {
 /*couleur choisi ici : https://uicolors.app/create*/
 :root {
   --black-50: #f6f6f6;
-  --black-100: #e7e7e7;
+  --black-100: #ffffff;
   --black-200: #d1d1d1;
   --black-300: #b0b0b0;
   --black-400: #888888;
@@ -170,19 +170,39 @@ textarea {
 }
 
 form textarea {
+  resize: none;
   width: 90%;
-  max-width: 90%;
-  min-width: 90%;
   height: 25vh;
-  max-height: 25vh;
-  min-height: 25vh;
   border-radius: 5px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--black-100);
 }
 
 /*LIGHT MODE*/
 body.light {
-  background: rgb(248, 143, 255);
-  background: linear-gradient(347deg, rgba(248, 143, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background: rgb(245, 232, 255);
+  background: linear-gradient(90deg, rgba(245, 232, 255, 1) 14%, rgba(255, 255, 255, 1) 50%, rgba(193, 245, 255, 1) 100%);
+}
+
+form.light input::placeholder,
+form.light textarea::placeholder {
+  color: var(--black-600);
+}
+
+section.light {
+  background-color: #deddda87;
+  color: var(--black-800);
+}
+
+form input.light,
+textarea.light {
+
+  border: 1px solid var(--black-800);
+  color: var(--black-800);
+  background-color: transparent;
 }
 
 @media (max-width: 800px) {

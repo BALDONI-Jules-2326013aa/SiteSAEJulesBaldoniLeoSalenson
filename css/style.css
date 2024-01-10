@@ -36,15 +36,6 @@ ion-icon {
 
 }
 
-.lien {
-  font-style: italic;
-  text-decoration: underline;
-}
-
-
-
-
-
 
 
 /*HOME*/
@@ -103,11 +94,13 @@ main {
 }
 
 .planet:hover p {
-  width: 100%;
+  width: auto;
+
+  border-radius: 15px;
   background-color: var(--black-800);
   display: block;
   bottom: 110%;
-  left: -5%;
+  left: 40%;
 }
 
 /* TERRE */
@@ -366,10 +359,17 @@ article {
   box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.22);
 }
 
-.card {
+.card div {
+  font-size: 20px;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
 }
 
 .card h1 {
@@ -438,4 +438,10 @@ article {
     font-size: 0.5rem;
   }
 
+}
+
+/*LIGHT MODE*/
+.planet.light:hover p {
+  background-color: var(--black-50);
+  color: var(--black-800);
 }
